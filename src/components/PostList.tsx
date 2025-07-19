@@ -10,8 +10,6 @@ type PostListProps = {
   posts: Post[];
 };
 
-const PAGE_SIZE = 10;
-
 export function PostList({ posts }: PostListProps) {
   const [searchText, setSearchText] = useState("");
   const [postList, setPostList] = useState<Post[]>(posts);
@@ -19,7 +17,6 @@ export function PostList({ posts }: PostListProps) {
   function handleSearch(searchValue: string) {
     if (!searchValue) {
       setPostList(posts);
-      const _postDisplay = posts.slice(0, PAGE_SIZE);
     }
     if (searchValue) {
       const result = posts.filter((post) =>
