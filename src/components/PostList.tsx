@@ -49,6 +49,7 @@ export function PostList({ posts }: PostListProps) {
             radius="full"
             color="indigo"
             variant="soft"
+            style={{fontSize: "1rem"}}
           >
             <TextField.Slot>
               <MagnifyingGlassIcon height="16" width="16" />

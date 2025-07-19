@@ -11,7 +11,7 @@ export function CommontLayout({
   return (
     <ThemeProvider attribute="class">
       <Theme>
-        <Container size="1">
+        <Container>
           <main>{children}</main>
           <Footer />
         </Container>
