@@ -5,14 +5,11 @@ import { removeAccentsLetterOnly } from "@/helpers/string";
 import {
   MagnifyingGlassIcon,
   CrossCircledIcon,
-  DoubleArrowDownIcon,
-  CopyIcon,
+  DoubleArrowDownIcon
 } from "@radix-ui/react-icons";
 import { Post } from "@/helpers/post";
 import debounce from "lodash/debounce";
 import { useDebounce } from "@/hooks";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-
 
 type PostListProps = {
   posts: Post[];
